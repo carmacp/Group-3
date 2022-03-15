@@ -23,9 +23,6 @@ p {
 
 /* NAVBAR */
 
-.navbar {
-  background-color: #ffffff;
-}
 #navigationbar {
   background-color: #ffffff;
 }
@@ -58,6 +55,7 @@ p {
   color:#000;
   margin: 0px 15px;
 }
+
 .dropdown-menu {
   background: #0083B3;
   color:black;
@@ -70,7 +68,7 @@ p {
     background: black;
 }
 
-.dropdown-menu1 {
+.dropdown-menu {
   background: #0083B3;
   color:black;
   background-size: cover;
@@ -174,7 +172,7 @@ padding-right: 50px;
 }
 .rating{
   padding:30px;
- margin-left:500px;
+ margin-left:700px;
 }
 .h3 {
   color:#000;
