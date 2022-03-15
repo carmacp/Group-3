@@ -60,7 +60,6 @@ p {
   background: #0083B3;
   color:black;
   background-size: cover;
-  margin-left: 350px;
 }
 .dropdown-item:focus, .dropdown-item:hover {
     color: #16181b;
@@ -192,11 +191,12 @@ padding-bottom: 20px;
 /* Footer */
 .FooterGrid {
   display: grid;
-  grid-template-columns: 15% 25% 10% 50%;
+  grid-template-columns: 20% 55% 5% 20%;
   grid-template-rows: 1fr;
   grid-template-areas: 
   "logo dondatebutton contactus links";
   background-color: #0083B3;
+  height: 200px;
 }
 .logo{
   grid-area: logo;
@@ -211,22 +211,19 @@ padding-bottom: 20px;
   grid-area:links;
 }
 .footlogo {
-  width:200px;
-  height:100px;
+  width:350px;
+  height:200px;
   align-items: left;
 }
-.donatebutton {
-  align-items: center;
-}
 .contactus {
-  font-size: 15px;
+  font-size: 25px;
+  font-weight: 400;
   color: #000;
-  margin-left: 320px;
-  margin-top:40px;
+  margin-top:85px;
 }
 .links {
-margin-top: 20px;
-margin-left: 310px;
+margin-top: 75px;
+padding-left: 15px;
 }
 .imgtwitter {
   display: inline-block;
@@ -265,6 +262,10 @@ margin-left: 310px;
   padding: 5px;
 }
 .btn-primary {
+  height: 80px;
+  width:220px;
   background-color: #97BA42;
   color:#000;
+  padding: 20px;
+  font-size: 30px;
 }
