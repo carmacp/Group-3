@@ -56,11 +56,6 @@ p {
   margin: 0px 15px;
 }
 
-.dropdown-menu {
-  background: #0083B3;
-  color:black;
-  background-size: cover;
-}
 .dropdown-item:focus, .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
@@ -69,12 +64,13 @@ p {
 
 .dropdown-menu {
   background: #0083B3;
-  color:black;
+  color:white;
   background-size: cover;
 }
 
-
-
+.nav-li {
+  color:#ffffff;
+}
 
 /* Jumbotron */
 
@@ -100,45 +96,6 @@ p {
 }
 .h2 {
   color:#000;
-}
-
-
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0
-}
-
-ul>li {
-    padding: 4px;
-    color: #C5CAE9
-}
-
-ul>li:hover {
-    color: #97BA42;
-    cursor: pointer
-}
-
-hr {
-    border-width: 3px
-}
-
-
-
-.social>i {
-    padding: 1%;
-    font-size: 15px
-}
-
-.social>i:hover {
-    color: #97BA42;
-    cursor: pointer
-}
-
-.policy>div {
-    padding: 4px
 }
 
 .heading {
