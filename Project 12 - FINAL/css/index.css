@@ -1,50 +1,68 @@
-
-
-h1, h2, h3, h4, h5, h6, {
+body {
+  background-color: #ffffff;
+  font-size: 13px;
+  color:#000;
+}
+.h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Anton', sans-serif;
   color: black;
+  margin-bottom: 30px;
 }
-
-    .header h1 {
-            margin-top: 0;
-            text-align: top;
-            color: black;
-            height: 100px;
-            width: 100%;
-        }
-
+ .header h1 {
+  margin-top: 0;
+  text-align: top;
+  color: black;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 30px;
+}
 p {
   font-family: 'Jura', sans-serif;
   color: black;
 }
 
+/* NAVBAR */
+
+.navbar {
+  background-color: #ffffff;
+}
+#navigationbar {
+  background-color: #ffffff;
+}
+.buttonnav {
+  background-color: #97BA42;
+  color: #000;
+  border: none;
+}
 .customNav {
   position: fixed;
   width: 100%;
-  background: url("../images/transparency.png");
-  background-color: transparent !important;
   background-size: cover;
   z-index: 10;
 }
 .navbar-nav {
+  background-color: #ffffff;
   margin-left: auto;
   margin-right: 0 !important;
 }
-
-
-
 .navbar-brand img {
   padding-right: 15px;
-  width: 65px;
+  width: 300px;
+  height: 100px;
 }
 .nav-item {
+  color:#000;
   margin: 0px 15px;
 }
-
+.nav-link {
+  color:#000;
+  margin: 0px 15px;
+}
 .dropdown-menu {
-  background: url("../images/transparency.png");
-  background-color: transparent !important;
+  background: #0083B3;
+  color:black;
   background-size: cover;
+  margin-left: 350px;
 }
 .dropdown-item:focus, .dropdown-item:hover {
     color: #16181b;
@@ -52,24 +70,27 @@ p {
     background: black;
 }
 
-.customNav a {
-  color: white !important;
+.dropdown-menu1 {
+  background: #0083B3;
+  color:black;
+  background-size: cover;
 }
-.navCTA {
-  font-size: 15px;
-}
+
+
+
+
+/* Jumbotron */
 
 .jumbotron {
   background-image: url(../images/turtles.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 25px);
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Jumbotron copy */
 .jumboCopy {
   width: 70%;
   min-width: 500px;
@@ -77,32 +98,15 @@ p {
   color: white;
   text-align: center;
 }
-
-/*
-footer {
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  background-color: #f5f5f5;
-  margin-top: 50px;
-} */
-
-.cardContainer {
-  margin-top: 20px;
+.display-4 {
+  padding: 30px;
 }
-.card {
-  margin: 0 auto;
+.h2 {
+  color:#000;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 
-body {
-    background-color: #f3f6fd;
-    font-size: 13px;
-    font-weight: bold;
-    color: rgb(189, 196, 203)
-}
+
 
 ul {
     list-style-type: none;
@@ -116,7 +120,7 @@ ul>li {
 }
 
 ul>li:hover {
-    color: #957bda;
+    color: #97BA42;
     cursor: pointer
 }
 
@@ -124,9 +128,7 @@ hr {
     border-width: 3px
 }
 
-.card {
-    padding: 2% 7%
-}
+
 
 .social>i {
     padding: 1%;
@@ -134,7 +136,7 @@ hr {
 }
 
 .social>i:hover {
-    color: #957bda;
+    color: #97BA42;
     cursor: pointer
 }
 
@@ -146,20 +148,125 @@ hr {
     font-family: 'Titillium Web', sans-serif;
     color: black
 }
-
 .divider {
     border-top: 2px solid
 }
 
-/*.back-top {
-
-    padding:30px;
+/* BODY CONTENT */
+.cardContainer {
+  margin-top: 20px;
+}
+.card {
+  margin: 0 auto;
+}
+.media-body {
+  margin-right: 30px;
+  font-size: 18px;
+  padding:10px;
+}
+.sec1 {
+  padding: 50px;
+}
+.endtext {
+padding: 30px;
+padding-left: 50px;
+padding-right: 50px;
+}
+.rating{
+  padding:30px;
+ margin-left:500px;
+}
+.h3 {
+  color:#000;
+}
+.h2 {
+  color:#000;
+}
+.paragraph1 {
+  font-size: 18px;
+}
+.lgimg {
+padding-left: 45px;
+padding-right: 45px;
+padding-bottom: 20px;
 }
 
-.back-top  img {
-    transform: rotate(180deg);
-
-    }
-
-
-*/
+/* Footer */
+.FooterGrid {
+  display: grid;
+  grid-template-columns: 15% 25% 10% 50%;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "logo dondatebutton contactus links";
+  background-color: #0083B3;
+}
+.logo{
+  grid-area: logo;
+}
+.donatebutton {
+  grid-area: donatebutton;
+}
+.contactus{
+  grid-area:contactus;
+}
+.links {
+  grid-area:links;
+}
+.footlogo {
+  width:200px;
+  height:100px;
+  align-items: left;
+}
+.donatebutton {
+  align-items: center;
+}
+.contactus {
+  font-size: 15px;
+  color: #000;
+  margin-left: 320px;
+  margin-top:40px;
+}
+.links {
+margin-top: 20px;
+margin-left: 310px;
+}
+.imgtwitter {
+  display: inline-block;
+  width:50px;
+  height:50px;
+  padding: 5px;
+}
+.imgfb {
+  display: inline-block;
+  width:50px;
+  height:50px;
+  padding: 5px;
+}
+.imgyoutube {
+  display: inline-block;
+  width:50px;
+  height:50px;
+  padding: 5px;
+}
+.imglinkedin {
+  display: inline-block;
+  width:50px;
+  height:50px;
+  padding: 5px;
+}
+.imgmail {
+  display: inline-block;
+  width:50px;
+  height:50px;
+  padding: 5px;
+}
+.imgwifi {
+  display: inline-block;
+  width:50px;
+  height:50px;
+  padding: 5px;
+}
+.btn-primary {
+  background-color: #97BA42;
+  color:#000;
+}
