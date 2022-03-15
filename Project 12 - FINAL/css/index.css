@@ -128,7 +128,7 @@ padding-right: 50px;
 }
 .rating{
   padding:30px;
- margin-left:700px;
+ margin-left:550px;
 }
 .h3 {
   color:#000;
@@ -148,10 +148,10 @@ padding-bottom: 20px;
 /* Footer */
 .FooterGrid {
   display: grid;
-  grid-template-columns: 20% 55% 5% 20%;
+  grid-template-columns: 30% 35% 5% 30%;
   grid-template-rows: 1fr;
   grid-template-areas: 
-  "logo dondatebutton contactus links";
+  "logo donatebutton contactus links";
   background-color: #0083B3;
   height: 200px;
 }
@@ -180,7 +180,7 @@ padding-bottom: 20px;
 }
 .links {
 margin-top: 75px;
-padding-left: 15px;
+padding-left: 30px;
 }
 .imgtwitter {
   display: inline-block;
@@ -225,4 +225,8 @@ padding-left: 15px;
   color:#000;
   padding: 20px;
   font-size: 30px;
+}
+
+.navigationbar {
+  background-color: #ffffff;
 }
