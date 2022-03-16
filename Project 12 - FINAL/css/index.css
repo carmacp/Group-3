@@ -121,6 +121,14 @@ p {
 .sec1 {
   padding: 50px;
 }
+.middlegrid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "img text";
+}
+
 .endtext {
 padding: 30px;
 padding-left: 50px;
@@ -128,7 +136,7 @@ padding-right: 50px;
 }
 .rating{
   padding:30px;
- margin-left:550px;
+ align-content: center;
 }
 .h3 {
   color:#000;
@@ -227,6 +235,17 @@ padding-left: 30px;
   font-size: 30px;
 }
 
-.navigationbar {
-  background-color: #ffffff;
-}
+@media only screen and (max-width:600px) {
+
+  .FooterGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "logo" 
+    "donate" 
+    "contactus" 
+    "links";
+  }
+  
+  }
